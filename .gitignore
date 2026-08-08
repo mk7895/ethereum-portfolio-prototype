@@ -1,0 +1,57 @@
+# Secrets and local configuration
+.env
+.env.*
+.secret
+.privatekey
+.privateKey
+*.mnemonic
+*.keystore
+*.pem
+*.p12
+*.key
+.npmrc
+.yarnrc*
+
+# Source files intentionally withheld because the unchanged originals contain
+# embedded service credentials. The public snapshot is non-runnable by design.
+/truffle-config.js
+/TokenManager.js
+/server.js
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Generated build, cache, and test output
+build/
+frontend/build/
+coverage/
+frontend/coverage/
+.cache/
+.parcel-cache/
+
+# Local runtime state
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local blockchain/deployment state
+.ganache/
+.openzeppelin/
+.truffle/
+
+# Editor and operating-system files
+.DS_Store
+.idea/
+.vscode/
+*.iml
+
+# Preserve the existing nested frontend history as a local backup if it is moved
+# aside before creating one repository at this project root.
+frontend/.git.frontend-legacy/
+

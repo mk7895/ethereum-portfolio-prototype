@@ -1,0 +1,116 @@
+.container {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.title {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin: 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 100px;
+}
+
+.subtitle {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+    align-items: center; /* Vertical alignment */
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+}
+
+.containerWithLogo {
+    display: flex; /* Aligns children (logo and metrics) side by side */
+    align-items: center; /* Vertical alignment */
+    justify-content: space-between; /* Spreads children across the available space */
+}
+
+.logo {
+    width: 15%; /* Adjust based on your logo size */
+    height: auto; /* Keeps the aspect ratio */
+    margin-right: 20px; /* Space between logo and metrics */
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.portfolioItem, .stockItem {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolioItem.selected, .stockItem.selected {
+    background-color: #c8e6c9;
+}
+
+.button {
+    cursor: pointer;
+    padding: 8px 16px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.buttonHead2 {
+    cursor: pointer;
+    padding: 8px 16px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.button:disabled {
+    background-color: #ccc;
+}
+
+.input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.span {
+    margin-right: 10px;
+}
+
+.metrics {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.button {
+    padding: 8px 16px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
