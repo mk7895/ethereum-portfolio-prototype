@@ -5,9 +5,9 @@ architecture, SQLite portfolio state, Solidity/Truffle contracts, MetaMask, and
 Ethereum testnet interactions. The project experiments with simulated assets,
 token transfers, stock-style portfolios, and portfolios of portfolios.
 
-> **Public snapshot status:** intentionally incomplete and non-runnable. The
-> original source is preserved unchanged, but three files containing embedded
-> service credentials are excluded by `.gitignore`.
+The public snapshot is intentionally incomplete and non-runnable. The original
+safe source is preserved unchanged, while three files containing embedded
+service credentials are excluded by `.gitignore`.
 
 ## What the public repository demonstrates
 
@@ -45,16 +45,12 @@ deployment.
 - This project should be described as an educational Ethereum testnet prototype,
   not as a production trading platform or audited smart-contract system.
 
-## Repository-boundary preparation
+## Repository boundary
 
-`frontend/` currently contains its own legacy `.git` directory. Before creating
-one repository at this project root, preserve that history outside the active
-path—for example by renaming it to `frontend/.git.frontend-legacy`. The root
-`.gitignore` already excludes that backup name. Do not delete the nested history.
-
-Afterward, initialise Git only in this `thirdversion` directory and verify that
-the three withheld source files, every credential file, database, build, and
-dependency directory remain ignored.
+The active repository starts at this project root. The frontend's former nested
+Git history is preserved locally as `frontend/.git.frontend-legacy` and is
+ignored rather than deleted. The three withheld source files, credential files,
+database, builds and dependency directories remain outside the public history.
 
 ## AI-assistance disclosure
 
@@ -62,6 +58,3 @@ The prototype was built as a learning project with substantial AI assistance
 while the author was learning React and Node. Portfolio descriptions should
 emphasise product scope, system integration, experimentation, and the ability to
 work across unfamiliar technologies—not claim unaided production engineering.
-
-Suggested repository name: `ethereum-portfolio-prototype`
-
